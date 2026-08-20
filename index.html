@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Liam McCabe - 3D Prop and Environment Artist"
+    >
+
+    <title>Liam McCabe | 3D Artist</title>
+
+
+    <!-- =====================================================
+         STYLESHEET
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+
+    <!-- =====================================================
+         MODEL VIEWER
+
+         Allows .GLB / .GLTF models to be viewed,
+         rotated and inspected directly on the website.
+    ====================================================== -->
+
+    <script
+        type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
+    </script>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar">
+
+    <a
+        href="#home"
+        class="logo"
+    >
+        Liam McCabe<span></span>
+    </a>
+
+
+    <nav id="nav">
+
+        <a href="#work">
+            WORK
+        </a>
+
+        <a href="#about">
+            ABOUT
+        </a>
+
+        <a href="#contact">
+            CONTACT
+        </a>
+
+
+        <a
+            href="assets/Liam-McCabe-CV.pdf"
+            class="cv-button"
+            download
+        >
+            DOWNLOAD CV
+        </a>
+
+    </nav>
+
+
+    <button
+        class="mobile-menu"
+        id="mobileMenu"
+        aria-label="Open menu"
+    >
+        ☰
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO / COVER PAGE
+===================================================== -->
+
+<section
+    id="home"
+    class="hero"
+>
+
+
+    <div class="hero-content">
+
+
+        <div class="eyebrow">
+            3D ARTIST / GAME DEVELOPMENT
+        </div>
+
+
+        <h1>
+
+            LIAM
+
+            <br>
+
+            <span>
+                McCabe
+            </span>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            3D prop and environment artist
+            specialising in game ready asset
+            creation and texturing.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+
+            <a
+                href="#work"
+                class="button primary"
+            >
+                VIEW MY WORK
+            </a>
+
+
+            <a
+                href="assets/Liam-McCabe-CV.pdf"
+                class="button secondary"
+                download
+            >
+                DOWNLOAD CV
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- HERO IMAGE -->
+
+    <div class="hero-image">
+
+        <img
+            src="assets/Logo.png"
+            alt="Liam McCabe 3D Artist"
+        >
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     WORK
+===================================================== -->
+
+<section
+    id="work"
+    class="work-section"
+>
+
+
+    <!-- SECTION HEADER -->
+
+    <div class="section-header">
+
+
+        <div>
+
+            <div class="eyebrow">
+                SELECTED WORK
+            </div>
+
+
+            <h2>
+                3D PORTFOLIO
+            </h2>
+
+        </div>
+
+
+        <p>
+
+            Click a project to view the
+            modelling process and inspect
+            the 3D asset.
+
+        </p>
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         PROJECT GRID
+    ================================================== -->
+
+    <div
+        id="projectGrid"
+        class="project-grid"
+    >
+
+
+
+        <!-- =================================================
+             PROJECT 1 — HAMMER
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-project
+        >
+
+
+            <!-- COVER IMAGE -->
+
+            <div class="project-image">
+
+                <img
+                    src="assets/Hammer Texture.png"
+                    alt="Hammer"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <!-- PROJECT INFORMATION -->
+
+            <div class="project-info">
+
+                <div>
+
+                    <div class="project-name">
+                        Hammer
+                    </div>
+
+
+                    <div class="project-category">
+                        PROP / HARD SURFACE
+                    </div>
+
+                </div>
+
+
+                <div class="project-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT DATA -->
+
+            <div class="project-data">
+
+
+                <!-- 3D MODEL -->
+
+                <model-viewer
+                    class="project-model"
+                    src="assets/Hammer .glb"
+                    alt="Interactive 3D model of Hammer"
+                >
+                </model-viewer>
+
+
+                <!-- BASE MODEL -->
+
+                <img
+                    class="project-base"
+                    src="assets/Hammer No texture.png"
+                    alt="Hammer Base Model"
+                >
+
+
+                <!-- TOPOLOGY -->
+
+                <img
+                    class="project-topology"
+                    src="assets/Hammer Wireframe.png"
+                    alt="Hammer Wireframe"
+                >
+
+
+                <!-- TEXTURES -->
+
+                <img
+                    class="project-textures"
+                    src="assets/Hammer Texture.png"
+                    alt="Hammer Textures"
+                >
+
+
+                <!-- UVS -->
+
+                <img
+                    class="project-uvs"
+                    src="assets/Hammer Uvs.png"
+                    alt="Hammer UV Layout"
+                >
+
+
+                <!-- DESCRIPTION -->
+
+                <p class="project-description">
+
+                    A low poly stylised hammer
+                    designed as a tool or background
+                    prop for a 3D game environment.
+
+                </p>
+
+
+                <!-- POLY COUNT -->
+
+                <p class="poly-count">
+                    36
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROJECT 2 — GLASS VILE
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-project
+        >
+
+
+            <!-- COVER IMAGE -->
+
+            <div class="project-image">
+
+                <img
+                    src="assets/Glass Vile textured.png"
+                    alt="Glass Vile"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <!-- PROJECT INFORMATION -->
+
+            <div class="project-info">
+
+                <div>
+
+                    <div class="project-name">
+                        Glass Vile
+                    </div>
+
+
+                    <div class="project-category">
+                        PROP / HARD SURFACE
+                    </div>
+
+                </div>
+
+
+                <div class="project-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT DATA -->
+
+            <div class="project-data">
+
+
+                <!-- 3D MODEL -->
+
+                <model-viewer
+                    class="project-model"
+                    src="assets/glass vile.glb"
+                    alt="Interactive 3D model of Glass Vile"
+                >
+                </model-viewer>
+
+
+                <!-- BASE MODEL -->
+
+                <img
+                    class="project-base"
+                    src="assets/glass vile base.png"
+                    alt="Glass Vile Base Model"
+                >
+
+
+                <!-- TOPOLOGY -->
+
+                <img
+                    class="project-topology"
+                    src="assets/glass vile topology.png"
+                    alt="Glass Vile Wireframe"
+                >
+
+
+                <!-- TEXTURES -->
+
+                <img
+                    class="project-textures"
+                    src="assets/Glass Vile textured.png"
+                    alt="Glass Vile Textures"
+                >
+
+
+                <!-- UVS -->
+
+                <img
+                    class="project-uvs"
+                    src="assets/glass vile Uv.png"
+                    alt="Glass Vile UV Layout"
+                >
+
+
+                <!-- DESCRIPTION -->
+
+                <p class="project-description">
+
+                    A simple low poly glass vial
+                    textured in Substance Painter
+                    for use in a VR game where I
+                    worked as the main 3D artist.
+
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROJECT 3 — ENVIRONMENT BLOCKOUT
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-project
+        >
+
+
+            <!-- COVER IMAGE -->
+
+            <div class="project-image">
+
+                <img
+                    src="assets/Blockout Base.png"
+                    alt="Simple Environment Blockout"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <!-- PROJECT INFORMATION -->
+
+            <div class="project-info">
+
+                <div>
+
+                    <div class="project-name">
+                        Simple Environment Blockout
+                    </div>
+
+
+                    <div class="project-category">
+                        HARD SURFACE / BLOCKOUT
+                    </div>
+
+                </div>
+
+
+                <div class="project-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT DATA -->
+
+            <div class="project-data">
+
+
+                <!-- 3D MODEL -->
+
+                <model-viewer
+                    class="project-model"
+                    src="assets/SCENE MOCKUP .glb"
+                    alt="Interactive 3D model of Environment Blockout"
+                >
+                </model-viewer>
+
+
+                <!-- BASE MODEL -->
+
+                <img
+                    class="project-base"
+                    src="assets/Blockout Base.png"
+                    alt="Environment Blockout Base Model"
+                >
+
+
+                <!-- TOPOLOGY -->
+
+                <img
+                    class="project-topology"
+                    src="assets/Blockout topo.png"
+                    alt="Environment Blockout Topology"
+                >
+
+
+                <!-- TEXTURES -->
+
+                <img
+                    class="project-textures"
+                    src="assets/not found.png"
+                    alt="No texture available"
+                >
+
+
+                <!-- UVS -->
+
+                <img
+                    class="project-uvs"
+                    src="assets/not found.png"
+                    alt="No UV image available"
+                >
+
+
+                <!-- DESCRIPTION -->
+
+                <p class="project-description">
+
+                    A simple environment blockout
+                    focusing on hard surface modelling,
+                    proportions and scene composition.
+
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROJECT 4 — BLANK
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-project
+        >
+
+
+            <div class="project-image">
+
+                <img
+                    src="assets/Barrel textures.png"
+                    alt="Project Four"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="project-info">
+
+                <div>
+
+                    <div class="project-name">
+                        Stylized Barrel
+                    </div>
+
+
+                    <div class="project-category">
+                        PROP / ENVIRONMENT
+                    </div>
+
+                </div>
+
+
+                <div class="project-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+
+            <div class="project-data">
+
+
+                <model-viewer
+                    class="project-model"
+                    src="assets/Barrel.glb"
+                    alt="Interactive 3D model"
+                >
+                </model-viewer>
+
+
+                <img
+                    class="project-base"
+                    src="assets/Barrel base.png"
+                    alt="Base Model"
+                >
+
+
+                <img
+                    class="project-topology"
+                    src="assets/barrel topo.png"
+                    alt="Topology"
+                >
+
+
+                <img
+                    class="project-textures"
+                    src="assets/Barrel textures.png"
+                    alt="Textures"
+                >
+
+
+                <img
+                    class="project-uvs"
+                    src="assets/Barrel Uv.png"
+                    alt="UV Layout"
+                >
+
+
+                <p class="project-description">
+                    Add a short description of this project here.
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROJECT 5 — BLANK
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-project
+        >
+
+
+            <div class="project-image">
+
+                <img
+                    src="assets/not found.png"
+                    alt="Project Five"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="project-info">
+
+                <div>
+
+                    <div class="project-name">
+                        Project Five
+                    </div>
+
+
+                    <div class="project-category">
+                        PROP / ENVIRONMENT
+                    </div>
+
+                </div>
+
+
+                <div class="project-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+
+            <div class="project-data">
+
+
+                <model-viewer
+                    class="project-model"
+                    src="assets/not found.glb"
+                    alt="Interactive 3D model"
+                >
+                </model-viewer>
+
+
+                <img
+                    class="project-base"
+                    src="assets/not found.png"
+                    alt="Base Model"
+                >
+
+
+                <img
+                    class="project-topology"
+                    src="assets/not found.png"
+                    alt="Topology"
+                >
+
+
+                <img
+                    class="project-textures"
+                    src="assets/not found.png"
+                    alt="Textures"
+                >
+
+
+                <img
+                    class="project-uvs"
+                    src="assets/not found.png"
+                    alt="UV Layout"
+                >
+
+
+                <p class="project-description">
+                    Add a short description of this project here.
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROJECT 6 — BLANK
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-project
+        >
+
+
+            <div class="project-image">
+
+                <img
+                    src="assets/not found.png"
+                    alt="Project Six"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="project-info">
+
+                <div>
+
+                    <div class="project-name">
+                        Project Six
+                    </div>
+
+
+                    <div class="project-category">
+                        PROP / ENVIRONMENT
+                    </div>
+
+                </div>
+
+
+                <div class="project-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+
+            <div class="project-data">
+
+
+                <model-viewer
+                    class="project-model"
+                    src="assets/not found.glb"
+                    alt="Interactive 3D model"
+                >
+                </model-viewer>
+
+
+                <img
+                    class="project-base"
+                    src="assets/not found.png"
+                    alt="Base Model"
+                >
+
+
+                <img
+                    class="project-topology"
+                    src="assets/not found.png"
+                    alt="Topology"
+                >
+
+
+                <img
+                    class="project-textures"
+                    src="assets/not found.png"
+                    alt="Textures"
+                >
+
+
+                <img
+                    class="project-uvs"
+                    src="assets/not found.png"
+                    alt="UV Layout"
+                >
+
+
+                <p class="project-description">
+                    Add a short description of this project here.
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROJECT 7 — BLANK
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-project
+        >
+
+
+            <div class="project-image">
+
+                <img
+                    src="assets/not found.png"
+                    alt="Project Seven"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="project-info">
+
+                <div>
+
+                    <div class="project-name">
+                        Project Seven
+                    </div>
+
+
+                    <div class="project-category">
+                        PROP / ENVIRONMENT
+                    </div>
+
+                </div>
+
+
+                <div class="project-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+
+            <div class="project-data">
+
+
+                <model-viewer
+                    class="project-model"
+                    src="assets/not found.glb"
+                    alt="Interactive 3D model"
+                >
+                </model-viewer>
+
+
+                <img
+                    class="project-base"
+                    src="assets/not found.png"
+                    alt="Base Model"
+                >
+
+
+                <img
+                    class="project-topology"
+                    src="assets/not found.png"
+                    alt="Topology"
+                >
+
+
+                <img
+                    class="project-textures"
+                    src="assets/not found.png"
+                    alt="Textures"
+                >
+
+
+                <img
+                    class="project-uvs"
+                    src="assets/not found.png"
+                    alt="UV Layout"
+                >
+
+
+                <p class="project-description">
+                    Add a short description of this project here.
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROJECT 8 — BLANK
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-project
+        >
+
+
+            <div class="project-image">
+
+                <img
+                    src="assets/not found.png"
+                    alt="Project Eight"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="project-info">
+
+                <div>
+
+                    <div class="project-name">
+                        Project Eight
+                    </div>
+
+
+                    <div class="project-category">
+                        PROP / ENVIRONMENT
+                    </div>
+
+                </div>
+
+
+                <div class="project-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+
+            <div class="project-data">
+
+
+                <model-viewer
+                    class="project-model"
+                    src="assets/not found.glb"
+                    alt="Interactive 3D model"
+                >
+                </model-viewer>
+
+
+                <img
+                    class="project-base"
+                    src="assets/not found.png"
+                    alt="Base Model"
+                >
+
+
+                <img
+                    class="project-topology"
+                    src="assets/not found.png"
+                    alt="Topology"
+                >
+
+
+                <img
+                    class="project-textures"
+                    src="assets/not found.png"
+                    alt="Textures"
+                >
+
+
+                <img
+                    class="project-uvs"
+                    src="assets/not found.png"
+                    alt="UV Layout"
+                >
+
+
+                <p class="project-description">
+                    Add a short description of this project here.
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROJECT 9 — BLANK
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-project
+        >
+
+
+            <div class="project-image">
+
+                <img
+                    src="assets/not found.png"
+                    alt="Project Nine"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="project-info">
+
+                <div>
+
+                    <div class="project-name">
+                        Project Nine
+                    </div>
+
+
+                    <div class="project-category">
+                        PROP / ENVIRONMENT
+                    </div>
+
+                </div>
+
+
+                <div class="project-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+
+            <div class="project-data">
+
+
+                <model-viewer
+                    class="project-model"
+                    src="assets/not found.glb"
+                    alt="Interactive 3D model"
+                >
+                </model-viewer>
+
+
+                <img
+                    class="project-base"
+                    src="assets/not found.png"
+                    alt="Base Model"
+                >
+
+
+                <img
+                    class="project-topology"
+                    src="assets/not found.png"
+                    alt="Topology"
+                >
+
+
+                <img
+                    class="project-textures"
+                    src="assets/not found.png"
+                    alt="Textures"
+                >
+
+
+                <img
+                    class="project-uvs"
+                    src="assets/not found.png"
+                    alt="UV Layout"
+                >
+
+
+                <p class="project-description">
+                    Add a short description of this project here.
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROJECT 10 — BLANK
+        ================================================== -->
+
+        <article
+            class="project-card"
+            data-project
+        >
+
+
+            <div class="project-image">
+
+                <img
+                    src="assets/not found.png"
+                    alt="Project Ten"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="project-info">
+
+                <div>
+
+                    <div class="project-name">
+                        Project Ten
+                    </div>
+
+
+                    <div class="project-category">
+                        PROP / ENVIRONMENT
+                    </div>
+
+                </div>
+
+
+                <div class="project-arrow">
+                    ↗
+                </div>
+
+            </div>
+
+
+            <div class="project-data">
+
+
+                <model-viewer
+                    class="project-model"
+                    src="assets/not found.glb"
+                    alt="Interactive 3D model"
+                >
+                </model-viewer>
+
+
+                <img
+                    class="project-base"
+                    src="assets/not found.png"
+                    alt="Base Model"
+                >
+
+
+                <img
+                    class="project-topology"
+                    src="assets/not found.png"
+                    alt="Topology"
+                >
+
+
+                <img
+                    class="project-textures"
+                    src="assets/not found.png"
+                    alt="Textures"
+                >
+
+
+                <img
+                    class="project-uvs"
+                    src="assets/not found.png"
+                    alt="UV Layout"
+                >
+
+
+                <p class="project-description">
+                    Add a short description of this project here.
+                </p>
+
+
+            </div>
+
+
+        </article>
+
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    id="about"
+    class="about-section"
+>
+
+
+    <div>
+
+        <div class="eyebrow">
+            ABOUT ME
+        </div>
+
+
+        <h2>
+
+            BUILDING
+
+            <br>
+
+            ASSETS FOR
+
+            <br>
+
+            GAMES.
+
+        </h2>
+
+    </div>
+
+
+    <div class="about-text">
+
+
+        <p>
+
+            I'm Liam McCabe, a 3D artist
+            specialising in game-ready props
+            and environments.
+
+        </p>
+
+
+        <p>
+
+            I enjoy taking an asset from
+            initial blockout through modelling,
+            topology, UVs and texturing.
+
+        </p>
+
+
+        <div class="software">
+
+            <span>
+                BLENDER
+            </span>
+
+            <span>
+                SUBSTANCE 3D
+            </span>
+
+            <span>
+                UNITY
+            </span>
+
+            <span>
+                UNREAL ENGINE
+            </span>
+
+            <span>
+                PHOTOSHOP
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+    id="contact"
+    class="contact-section"
+>
+
+
+    <div class="eyebrow">
+        CONTACT
+    </div>
+
+
+    <h2>
+
+        LET'S MAKE
+
+        <br>
+
+        SOMETHING.
+
+    </h2>
+
+
+    <!-- CHANGE EMAIL -->
+
+    <a
+        href="mailto:your@email.com"
+        class="email"
+    >
+        your@email.com
+    </a>
+
+
+    <!-- SOCIALS -->
+
+    <div class="socials">
+
+
+        <a
+            href="#"
+            target="_blank"
+            rel="noopener"
+        >
+            ARTSTATION
+        </a>
+
+
+        <a
+            href="#"
+            target="_blank"
+            rel="noopener"
+        >
+            LINKEDIN
+        </a>
+
+
+        <a
+            href="#"
+            target="_blank"
+            rel="noopener"
+        >
+            GITHUB
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <span>
+        © 2026 LIAM MCCABE
+    </span>
+
+
+    <span>
+        3D ARTIST / GAME DEVELOPMENT
+    </span>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     PROJECT OVERLAY / MODAL
+===================================================== -->
+
+<div
+    id="projectModal"
+    class="modal"
+    aria-hidden="true"
+>
+
+
+    <!-- BACKGROUND -->
+
+    <div
+        class="modal-background"
+        id="modalBackground"
+    >
+    </div>
+
+
+
+    <!-- MODAL CONTENT -->
+
+    <div class="modal-content">
+
+
+        <!-- CLOSE -->
+
+        <button
+            id="closeModal"
+            class="close-modal"
+            aria-label="Close project"
+        >
+            ×
+        </button>
+
+
+
+        <!-- =================================================
+             PROJECT TITLE / DESCRIPTION
+        ================================================== -->
+
+        <div class="modal-title">
+
+
+            <div>
+
+
+                <div
+                    id="modalCategory"
+                    class="eyebrow"
+                >
+                </div>
+
+
+                <h2
+                    id="modalProjectTitle"
+                >
+                </h2>
+
+
+            </div>
+
+
+            <p
+                id="modalDescription"
+            >
+            </p>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             PROJECT PROCESS
+        ================================================== -->
+
+        <div class="process-grid">
+
+
+            <!-- =================================================
+                 3D MODEL
+            ================================================== -->
+
+            <div
+                class="process-card model-card"
+            >
+
+
+                <div class="image-label">
+                    01 / 3D MODEL
+                </div>
+
+
+                <model-viewer
+                    id="modalModel"
+                    class="portfolio-model"
+                    src=""
+                    alt="Interactive 3D model"
+                    camera-controls
+                    touch-action="pan-y"
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    environment-image="neutral"
+                    interaction-prompt="auto"
+                >
+                </model-viewer>
+
+
+                <div class="model-hint">
+
+                    DRAG TO ROTATE
+
+                    <span>
+                        •
+                    </span>
+
+                    SCROLL TO ZOOM
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 BASE MODEL
+            ================================================== -->
+
+            <div class="process-card">
+
+
+                <div class="image-label">
+                    02 / BASE MODEL
+                </div>
+
+
+                <img
+                    id="modalBase"
+                    src=""
+                    alt="Base model"
+                >
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TOPOLOGY
+            ================================================== -->
+
+            <div class="process-card">
+
+
+                <div class="image-label">
+                    03 / TOPOLOGY
+                </div>
+
+
+                <img
+                    id="modalTopology"
+                    src=""
+                    alt="Topology and wireframe"
+                >
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TEXTURES
+            ================================================== -->
+
+            <div class="process-card">
+
+
+                <div class="image-label">
+                    04 / TEXTURES
+                </div>
+
+
+                <img
+                    id="modalTextures"
+                    src=""
+                    alt="Textures"
+                >
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 UVS
+            ================================================== -->
+
+            <div class="process-card">
+
+
+                <div class="image-label">
+                    05 / UVS
+                </div>
+
+
+                <img
+                    id="modalUVs"
+                    src=""
+                    alt="UV layout"
+                >
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
