@@ -1,13 +1,3 @@
-/* =====================================================
-   PROJECT PORTFOLIO
-   Liam McCabe
-===================================================== */
-
-
-/* =====================================================
-   PROJECT ELEMENTS
-===================================================== */
-
 const projectCards = document.querySelectorAll(".project-card");
 
 const modal = document.getElementById("projectModal");
@@ -27,9 +17,6 @@ const modalCategory =
 const modalDescription =
     document.getElementById("modalDescription");
 
-const modalModel =
-    document.getElementById("modalModel");
-
 const modalBase =
     document.getElementById("modalBase");
 
@@ -43,17 +30,9 @@ const modalUVs =
     document.getElementById("modalUVs");
 
 
-/* =====================================================
-   OPEN PROJECT
-===================================================== */
-
 projectCards.forEach(card => {
 
     card.addEventListener("click", function () {
-
-        /* ---------------------------------------------
-           GET PROJECT INFORMATION FROM HTML
-        --------------------------------------------- */
 
         const titleElement =
             card.querySelector(".project-name");
@@ -83,58 +62,12 @@ projectCards.forEach(card => {
                 : "";
 
 
-        /* ---------------------------------------------
-           SET PROJECT TEXT
-        --------------------------------------------- */
-
         modalTitle.textContent = title;
 
         modalCategory.textContent = category;
 
         modalDescription.textContent = description;
 
-
-        /* ---------------------------------------------
-           GET 3D MODEL FROM HTML
-        --------------------------------------------- */
-
-        const projectModel =
-            card.querySelector(".project-model");
-
-
-        if (projectModel) {
-
-            const modelPath =
-                projectModel.getAttribute("src");
-
-
-            if (
-                modelPath &&
-                modelPath !== "" &&
-                !modelPath.includes("not found")
-            ) {
-
-                modalModel.setAttribute(
-                    "src",
-                    modelPath
-                );
-
-                modalModel.style.display = "block";
-
-            } else {
-
-                modalModel.removeAttribute("src");
-
-                modalModel.style.display = "none";
-
-            }
-
-        }
-
-
-        /* ---------------------------------------------
-           GET BASE MODEL
-        --------------------------------------------- */
 
         const baseImage =
             card.querySelector(".project-base");
@@ -164,10 +97,6 @@ projectCards.forEach(card => {
         }
 
 
-        /* ---------------------------------------------
-           GET TOPOLOGY
-        --------------------------------------------- */
-
         const topologyImage =
             card.querySelector(".project-topology");
 
@@ -195,10 +124,6 @@ projectCards.forEach(card => {
 
         }
 
-
-        /* ---------------------------------------------
-           GET TEXTURES
-        --------------------------------------------- */
 
         const textureImage =
             card.querySelector(".project-textures");
@@ -228,10 +153,6 @@ projectCards.forEach(card => {
         }
 
 
-        /* ---------------------------------------------
-           GET UVS
-        --------------------------------------------- */
-
         const uvImage =
             card.querySelector(".project-uvs");
 
@@ -260,10 +181,6 @@ projectCards.forEach(card => {
         }
 
 
-        /* ---------------------------------------------
-           OPEN MODAL
-        --------------------------------------------- */
-
         modal.classList.add("active");
 
         modal.setAttribute(
@@ -275,37 +192,10 @@ projectCards.forEach(card => {
             "modal-open"
         );
 
-
-        /* ---------------------------------------------
-           RESET MODEL CAMERA
-        --------------------------------------------- */
-
-        if (modalModel) {
-
-            setTimeout(() => {
-
-                try {
-
-                    modalModel.resetTurntableRotation();
-
-                } catch (error) {
-
-                    /* Model viewer may not be loaded yet */
-
-                }
-
-            }, 100);
-
-        }
-
     });
 
 });
 
-
-/* =====================================================
-   CLOSE PROJECT
-===================================================== */
 
 function closeProject() {
 
@@ -320,23 +210,8 @@ function closeProject() {
         "modal-open"
     );
 
-
-    /* ---------------------------------------------
-       STOP / CLEAR MODEL
-    --------------------------------------------- */
-
-    if (modalModel) {
-
-        modalModel.removeAttribute("src");
-
-    }
-
 }
 
-
-/* =====================================================
-   CLOSE BUTTON
-===================================================== */
 
 if (closeModalButton) {
 
@@ -348,10 +223,6 @@ if (closeModalButton) {
 }
 
 
-/* =====================================================
-   CLOSE WHEN CLICKING BACKGROUND
-===================================================== */
-
 if (modalBackground) {
 
     modalBackground.addEventListener(
@@ -361,10 +232,6 @@ if (modalBackground) {
 
 }
 
-
-/* =====================================================
-   ESCAPE KEY
-===================================================== */
 
 document.addEventListener(
     "keydown",
@@ -379,10 +246,6 @@ document.addEventListener(
     }
 );
 
-
-/* =====================================================
-   MOBILE NAVIGATION
-===================================================== */
 
 const mobileMenu =
     document.getElementById("mobileMenu");
@@ -402,10 +265,6 @@ if (mobileMenu && nav) {
         }
     );
 
-
-    /* ---------------------------------------------
-       CLOSE MOBILE MENU WHEN LINK IS CLICKED
-    --------------------------------------------- */
 
     const navLinks =
         nav.querySelectorAll("a");
@@ -427,10 +286,6 @@ if (mobileMenu && nav) {
 }
 
 
-/* =====================================================
-   PREVENT MODAL CONTENT FROM CLOSING MODAL
-===================================================== */
-
 const modalContent =
     document.querySelector(".modal-content");
 
@@ -448,10 +303,6 @@ if (modalContent) {
 
 }
 
-
-/* =====================================================
-   PROJECT CARD KEYBOARD ACCESSIBILITY
-===================================================== */
 
 projectCards.forEach(card => {
 
@@ -481,10 +332,6 @@ projectCards.forEach(card => {
 
 });
 
-
-/* =====================================================
-   PAGE LOADED
-===================================================== */
 
 console.log(
     "Liam McCabe Portfolio loaded successfully."
